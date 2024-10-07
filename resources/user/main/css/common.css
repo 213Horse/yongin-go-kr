@@ -1,0 +1,225 @@
+@charset "utf-8";
+/* reset */
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    /* box-sizing:border-box;*/
+    -webkit-text-size-adjust: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a,
+img {
+    border: 0;
+}
+
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+img {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+button {
+    cursor: pointer
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    line-height: 0;
+    vertical-align: top;
+    max-width: 100%;
+}
+
+form,
+fieldset {
+    width: 100%;
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img.fx {
+    width: 100%;
+}
+
+pre {
+    overflow: hidden;
+    white-space: pre-line;
+    word-break: break-all;
+}
+
+em,
+address {
+    font-style: normal;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/*공통 class*/
+
+.none {
+    display: none;
+}
+
+.inner {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.sdonly {
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+    line-height: 0 !important;
+    font-size: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    color: transparent !important;
+    overflow: hidden !important;
+}
+
+/*사운드리더 only */
+
+.sdonly:before,
+.sdonly:after {
+    display: none !important;
+}
+
+::selection {
+    background: #1e6cbb;
+    color: #fff;
+}
+
+/* * {font-family:"맑은 고딕",맑은고딕,Malgun Gothic,helvetica,HelveticaNeue-Light,AppleSDGothicNeo-Light,sans-serif, dotum;}*/
+
+/* body, textarea,input, pre {line-height:1.2; font-size:15px; color:#333;}*/
+
+textarea {
+    resize: none;
+}
+
+#header textarea,
+#header input,
+#header pre {
+    line-height: 1.2;
+    font-size: 15px;
+    color: #333;
+}
+
+/*JOO STYLE*/
+
+.clr:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clr>li {
+    float: left;
+}
+
+.tac {
+    text-align: center;
+}
+
+.tal {
+    text-align: left;
+}
+
+.tar {
+    text-align: right;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* skipnavigation */
+
+#skipNavi {
+    position: fixed;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    z-index: 9999;
+}
+
+#skipNavi a {
+    display: block;
+    position: absolute;
+    top: -27px;
+    width: 100%;
+    height: 1px;
+    line-height: 1px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+#skipNavi a:focus {
+    top: 0px;
+    height: 26px;
+    line-height: 26px;
+    z-index: 9999;
+}

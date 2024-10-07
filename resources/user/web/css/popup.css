@@ -1,0 +1,152 @@
+@charset "utf-8";
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+.main_popup {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-overflow-scrolling: touch;
+    z-index: 3000;
+}
+
+.main_popup_inner {
+    position: relative;
+    width: 820px;
+    max-width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+    padding: 40px 20px;
+    border: 5px solid #7F7F7F;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.main_popup_title {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #dadada;
+    color: #0c0c0c;
+    font-size: 28px;
+    letter-spacing: -3px;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.main_popup_title span {
+    color: #1c225f;
+}
+
+.main_popup_body {
+    padding: 0;
+}
+
+.main_popup_body>p {
+    max-height: 600px;
+    overflow: auto;
+    padding: 5px;
+    background-color: #fff;
+    font-size: 15px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.main_popup_close {
+    margin-top: 5px;
+    background: #fff;
+    text-align: center;
+}
+
+.main_popup_close a {
+    display: inline-block;
+    width: 49%;
+    padding: 5px 0;
+    background-color: #333;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* 20200819 start */
+
+.main_popup2 {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-overflow-scrolling: touch;
+    z-index: 3000;
+}
+
+.main_popup2_inner {
+    position: relative;
+    overflow: hidden;
+    width: 570px;
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 10px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.popup_img {
+    text-align: center;
+}
+
+.popup_img img {
+    max-width: 100%;
+}
+
+.m_pop_img {
+    display: none;
+}
+
+/* 20200819 end */
+
+@media screen and (max-width: 767px) {
+    .main_popup {
+        padding: 0 10px;
+    }
+    .main_popup_inner {
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .main_popup_title {
+        font-size: 16px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .main_popup_body>p {
+        max-height: 400px;
+        font-size: 13px;
+    }
+    .main_popup_close a {
+        width: 100%;
+    }
+    /* 20200819 start */
+    .main_popup2 {
+        padding: 0 10px;
+    }
+    .main_popup2_inner {
+        margin: 10px auto;
+        padding: 2px;
+    }
+    .pc_pop_img {
+        display: none;
+    }
+    .m_pop_img {
+        display: block;
+        width: 100%;
+    }
+    .main_popup_close a {
+        font-size: 14px;
+    }
+    /* 20200819 end */
+}
